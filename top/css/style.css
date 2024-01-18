@@ -1,6 +1,7 @@
 body {
-    background-color: #E4E4E4;
+    background-color: #FCFCF6;
     font-size: 16px;
+    font-weight: 400;
     color: #000;
     font-family: 'Noto Serif JP', serif;
 }
@@ -33,13 +34,13 @@ nav li {
     margin-left: 40px;
 }
 
-@keyframes zoomUp {
+@keyframes zoomDown {
     0% {
-        transform: scale(1);
+        transform: scale(1.15);
     }
 
     100% {
-        transform: scale(1.15);
+        transform: scale(1);
     }
 }
 
@@ -48,22 +49,26 @@ nav li {
     display: flex;
 }
 
-.slides {
+.mainslides {
     position: relative;
 }
 
-.swiper {
+.mainslides .swiper {
     width: 840px;
     height: 800px;
 }
 
-.slide-text p{
+.mainslides .swiper-pagination-bullet {
+    background-color: #E4E4E4;
+}
+
+.slide-text p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 1;
-    color: #E4E4E4;
+    color: #FCFCF6;
     font-size: 42px;
     white-space: nowrap;
     margin: 0;
@@ -72,26 +77,21 @@ nav li {
 .swiper-slide-active .swiper-img,
 .swiper-slide-duplicate-active .swiper-img,
 .swiper-slide-prev .swiper-img {
-    animation: zoomUp 7s linear 0s normal both;
+    animation: zoomDown 7s linear 0s normal both;
 }
 
-#swiper .swiper-pagination-bullet {
-    background-color: #E4E4E4;
-}
-
-
-#swiper .swiper-slide {
+.mainslides .swiper .swiper-slide {
     position: relative;
     overflow: hidden;
 }
 
-#swiper .swiper-img {
+.mainslides .swiper .swiper-img {
     position: absolute;
     inset: 0;
     margin: auto;
 }
 
-#swiper img {
+.mainslides .swiper img {
     width: 100%;
     height: auto;
 }
@@ -107,7 +107,299 @@ nav li {
     margin: 0;
 }
 
-.title h2{
+.title h2 {
     font-size: 50px;
+    margin: 0;
     font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bridelfair {
+    margin: 180px 120px;
+    padding-left: 60px;
+    width: 1440px;
+}
+
+.bridelfair-slides {
+    margin-top: 18px;
+}
+
+.bridelfair-slides .swiper-slide {
+    background-color: aquamarine;
+    width: 350px;
+    display: inline-block;
+}
+
+.bridelfair-slides .swiper-slide+.swiper-slide {
+    margin-left: 30px;
+}
+
+.bridelfair-slides .swiper-slide p {
+    background-color: aqua;
+}
+
+.introduction {
+    margin: 250px 0 80px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 53px;
+}
+
+.chathcopy {
+    vertical-align: middle;
+    writing-mode: vertical-rl;
+    letter-spacing: 10px;
+    margin: 0 auto 180px;
+}
+
+.consept {
+    text-align: center;
+    min-width: 1440px;
+}
+
+.plan-section {
+    margin: 430px 0 0 0;
+    /* width: 100vw; */
+    height: 690px;
+    background-image: url('../img/planbgimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.plan {
+    position: absolute;
+    top: -250px;
+    margin: 0 60px;
+}
+
+.plan .title {
+    margin-bottom: 22px;
+}
+
+
+.card-list {
+    display: flex;
+}
+
+.plan-card {
+    position: relative;
+    width: 600px;
+    height: 690px;
+}
+
+.plan-card-body {
+    width: 480px;
+    height: 150px;
+    background-color: #FCFCF6;
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+}
+
+.plan-card-body h3 {
+    font-family: Cormorant;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 34px auto 10px 34px;
+}
+
+.plan-card-body p {
+    margin: 0px auto auto 34px;
+}
+
+.plan-card-icon {
+    position: absolute;
+    display: inline-block;
+    bottom: 12px;
+    right: 16px;
+}
+
+.plan-card-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.information {
+    padding: 180px 120px;
+}
+
+.tab {
+    display: flex;
+}
+
+.tab-head {
+    margin-right: 180px;
+    min-width: 210px;
+}
+
+.tab-title h2{
+    margin-bottom: 40px;
+    font-family: "Julius Sans One";
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.filter li {
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: "Noto Sans JP";
+}
+
+.filter li.is-active {
+    color: red;
+    list-style: disc;
+}
+
+.category li {
+    display: none;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+}
+
+.category li.is-show {
+    display: block;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+}
+
+.category-head {
+    display: flex;
+    margin-right: 59px;
+}
+
+.category-date {
+    margin-right: 50px;
+}
+
+.category-item {
+    min-width: 810px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #000;
+}
+
+
+
+.contact {
+    width: 100%;
+    min-width: 1440px;
+    height: 540px;
+    background-color: #EBEFEC;
+}
+
+.contact-wrap {
+    display: flex;
+}
+
+.contact-text-body {
+    margin: 120px;
+    min-width: 300px;
+}
+
+.contact-text {
+    margin: 50px 0 25px;
+
+}
+
+.content-title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    margin: auto;
+}
+
+.btn-navy {
+    width: 258px;
+    height: 75px;
+    background-color: #405A57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+}
+
+
+.btn-txt-navy {
+    font-size: 18px;
+    color: #FCFCF6;
+    text-align: center;
+}
+
+.btn-navy svg {
+    margin-right: 8px;
+}
+
+.contact-img {
+    margin: 0 0 0 auto;
+}
+
+footer {
+    background-color: #262F2E;
+}
+
+.footer-body {
+    padding: 120px 120px 30px;
+}
+
+.footer-logo {
+    margin-bottom: 120px;
+}
+
+.adles {
+    display: flex;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #FCFCF6;
+    margin-bottom: 30px;
+}
+
+.adles-text {
+    margin-right: 80px;
+}
+
+.adles-text h2,
+.adles-text p {
+    color: #E4E4E4;
+    font-family: 'Noto Sans JP';
+}
+
+.adles-text h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.adles-text p {
+    font-size: 13px;
+}
+
+.sns-link {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.sns-link a {
+    margin-left: 15px;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    color: #E4E4E4;
+    font-size: 12px;
+}
+
+.copy-right {
+    text-decoration-line: underline;
 }
