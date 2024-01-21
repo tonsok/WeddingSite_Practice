@@ -1,0 +1,650 @@
+body {
+    background-color: #FFF;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Serif JP', serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    /* width: 375px; */
+    position: fixed;
+    z-index: 10;
+}
+
+.open-icon {
+    position: fixed;
+    top: 24px;
+    right: 20px;
+}
+
+.open-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -235px;
+    width: 225px;
+    height: 100%;
+    background-color: #262F2E;
+    z-index: 20;
+    padding: 100px 0 0 40px;
+    
+}
+
+.hamburgermenu {
+    position: fixed;
+    z-index: 20;
+}
+
+.menu.open {
+    animation: slide-left .5s ease-in-out .1s normal both;
+}
+
+.menu.close {
+    animation: slide-right .5s ease-in-out .1s normal both;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-235px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-235px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.close-icon {
+    margin-bottom: 58px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.menu-logo {
+    display: flex;
+    margin-top: 222px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 40px;
+    line-height: 15px;
+}
+
+nav a{
+    margin: 0;
+    font-size: 14px;
+    color: #FFF;
+    font-family: 'Julius Sans One'
+    
+}
+
+.close-icon {
+    background-color: transparent;
+    border: none;
+}
+
+@keyframes zoomDown {
+    0% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mainvisual {
+    
+    margin: 0 auto 80px;
+    padding: 10px 10px 0;
+}
+
+.mainslides {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.mainslides .swiper {
+    width: 355px;
+    height: 550px;
+}
+
+.mainslides .swiper-pagination-bullet {
+    background-color: #E4E4E4;
+    width: 6px;
+    height: 6px;
+    margin: 0 12px !important;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #FCFCF6;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.heater-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.swiper-slide-active .swiper-img,
+.swiper-slide-duplicate-active .swiper-img,
+.swiper-slide-prev .swiper-img {
+    animation: zoomDown 7s linear 0s normal both;
+}
+
+.mainslides .swiper .swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.mainslides .swiper .swiper-img {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.mainslides .swiper img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-introduction {
+    min-width: max-content;
+    line-height: 26px;
+    margin: 0 10px;
+}
+
+.slide-introduction {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.content-title {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.bridalfair {
+    /* width: 375px; */
+    margin: 0 auto;
+    padding: 0 0 80px 20px;
+}
+
+.bridalfair .content-title {
+    max-width: 430px;
+    margin: 0 auto 23px;
+
+}
+
+.bridalfair-body {
+    position: relative;
+}
+
+.swiper-btn {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+.bridalfair-slides .swiper-slide {
+    width: 202px;
+    display: inline-block;
+}
+
+.bridalfair-slides .swiper-slide+.swiper-slide {
+    margin-left: 14px;
+}
+
+.bridalfair-body .swiper-button-prev,
+.bridalfair-body .swiper-button-next {
+    position: static;
+    margin: 0 10px;
+    --swiper-navigation-size: 10px;
+    --swiper-navigation-color: #000;
+}
+
+.bridalfair-slides {
+    margin: 0 0 20px;
+}
+
+.bridalfair-card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.bridalfair-card-title p {
+    font-size: 12px;
+    margin: 0;
+    line-height: 18px;
+}
+
+.bridalfair-card-icon {
+    display: flex;
+    justify-content: end;
+}
+
+.bridalfair-card-icon svg {
+    width: 6px;
+    height: 6px;
+    font-size: 0;
+    margin: 8px 0 0;
+}
+
+.viewmore-btn {
+    padding-right: 20px;
+}
+
+.viewmore-btn-wrap {
+    margin: 0 0 0 auto;
+    width: 98px;
+    font-size: 14px;
+    line-height: 15px;
+    border-bottom: solid 1px #000;
+    position: relative;
+}
+
+.viewmore-btn-body {
+    margin-bottom: 4px;
+}
+
+.viewmore-btn a {
+    text-decoration: none;
+    font-family: "Julius Sans One";
+}
+
+.viewmore-btn svg {
+    position: absolute;
+    width: 3px;
+    height: 6px;
+    font-size: 0;
+    right: 0;
+    bottom: 8px;
+}
+
+.introduction {
+    /* width: 375px; */
+    /* margin: 0 auto; */
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chathcopy {
+    writing-mode: vertical-rl;
+    text-wrap: nowrap;
+    font-size: 15px;
+    letter-spacing: .53em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 32.7px;
+    margin: 0 auto 80px;
+}
+
+.sub-img {
+    margin: 0 auto;
+    max-width: 430px;
+    text-align: center;
+}
+
+.sub-img img {
+    width: 100%;
+}
+
+.consept {
+    margin: 0 auto;
+    padding: 80px 10px;
+    text-align: center;
+    max-width: 430px;
+}
+
+.consept img {
+    width: 100%;
+}
+
+.plan {
+    height: 927px;
+}
+
+.plan .content-title {
+    margin: 0 auto 20px;
+    max-width: 430px;
+}
+
+.plan-body {
+    position: relative;
+    padding: 0 42px 0;
+}
+
+.plan-body::after {
+    width: 100%;
+    height: 826px;
+    content: "";
+    background-image: url("../img/planbgimg.png");
+    position: absolute;
+    bottom: -123px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-position: center bottom;
+    margin: auto;
+}
+
+
+.plan-card {
+    position: relative;
+    width: 290px;
+    margin: 0 auto 87px;
+}
+
+.plan-card-body {
+    width: 240px;
+    padding: 26px 14px 14px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: -63px;
+    right: 0px;
+}
+
+.plan-card-body h3 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: "Cormorant";
+    text-align: center;
+}
+
+.plan-card-title {
+    margin-bottom: 12px;
+}
+
+.plan-card-body p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 17px;
+    font-family:  "Noto Sans JP";
+}
+
+.plan-card-copy {
+    margin-bottom: 6px;
+}
+
+.plan-card-icon {
+    font-size: 0;
+    text-align: end;
+}
+
+.plan-card-icon svg {
+    font-size: 0;
+    width: 6px;
+    height: 6px;
+}
+
+.information {
+    margin: 0 auto;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    max-width: 430px;
+}
+
+
+.tab-head {
+    margin-bottom: 40px;
+}
+
+.information .content-title {
+    margin-bottom: 20px;
+}
+
+ul.filter {
+    display: flex;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.filter li {
+    list-style: none;
+    color: #B4B4B4;
+    cursor: pointer;
+    margin: 0 40px 0 0;
+    font-family: "Noto Sans JP";
+}
+
+.filter li.is-active {
+    color: #000;
+    list-style-type: disc;
+}
+
+.filter li.is-active::marker {
+    color: #DEE7E0;
+}
+
+.category li {
+    display: none;
+    font-family: "Noto Sans JP";
+}
+
+.category li.is-show {
+    display: flex;
+}
+
+.category {
+    height: 264px;
+}
+
+ul.category {
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    width: 335px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #000;
+}
+
+.category-head {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.category-date {
+    margin-right: 20px;
+}
+
+.category-title {
+    margin-bottom: 20px;
+}
+
+.category-label {
+    color: #B4B4B4;
+}
+
+.information .viewmore-btn {
+    padding: 0;
+}
+
+.contact {
+    margin: 0 auto;
+    background-color: #EBEFEC;
+}
+
+.contact-text-body {
+    text-align: center;
+    padding: 50px 81px ;
+}
+
+.contact .content-title {
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 14px;
+}
+
+.contact-tel {
+    font-family: 'Julius Sans One';
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0 0 22px;
+}
+
+
+.btn-navy {
+    display: inline-flex;
+    width: 212px;
+    height: 50px;
+    background-color: #405A57;
+    align-items: center;
+    justify-content: center;
+    color: #FCFCF6;
+}
+
+.btn-txt-navy {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Noto Sans JP";
+}
+
+.btn-navy svg {
+    font-size: 0;
+    width: 20px;
+    height: 16px;
+    pointer-events: none;
+    margin-right: 12px;
+}
+
+.contact-img {
+    margin: 0 auto;
+        max-width: 430px;
+        background-color: #EBEFEC;
+}
+
+.contact-img img {
+    width: 100%;
+}
+
+footer {
+    margin: 0 auto;
+    background-color: #262F2E;
+    padding: 36px 20px 20px;
+    color: #FCFCF6;
+}
+
+.footer-body {
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.adles {
+    border-bottom: 1px solid #FCFCF6;
+    margin-bottom: 20px;
+}
+
+.adles-text {
+    margin-bottom: 30px;
+}
+
+.adles-text p ,
+.adles-text h3 {
+    margin: 0;
+    font-family: 'Noto Sans JP';
+}
+
+.adles-text h3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.adles-text p {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+
+.sns-link {
+    margin-bottom: 28px;
+}
+
+.sns-link a {
+    display: inline-block;
+}
+
+.sns-link svg{
+    margin-right: 16px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    color: #E4E4E4;
+    font-size: 11px;
+}
+
+.copy-right {
+    text-decoration-line: underline;
+}
