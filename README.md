@@ -12,11 +12,14 @@ https://note.com/atsuko262/n/nb05930b2a91e
 - swiper
 - intersection observer
 
-## 制作物のイメージ
+# 制作物のイメージ
 
-|PC-TOP|SP-TOP|
-|---|---|
-|![pc-top](https://github.com/tonsok/WeddingSite_Practice/assets/62021939/9ed6b673-06e0-4de3-8781-6539eac18661)|![sp-top](https://github.com/tonsok/WeddingSite_Practice/assets/62021939/adc5991c-4982-4412-b7b4-4d7efe98980d)|
+## PC-TOP
+![pc-top](https://github.com/tonsok/WeddingSite_Practice/assets/62021939/9ed6b673-06e0-4de3-8781-6539eac18661)
+## SP-TOP
+![sp-top](https://github.com/tonsok/WeddingSite_Practice/assets/62021939/19a46ef5-e568-456e-9c42-b1ada46f6c28)
+
+
 
 
 
